@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>《江湖·启行录》第三方 SDK 清单</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:"Microsoft YaHei","PingFang SC",sans-serif;max-width:820px;margin:0 auto;padding:28px 18px 48px;color:#222;line-height:1.85;background:#fff;}
+h1{font-size:22px;text-align:center;margin-bottom:18px;letter-spacing:1px;}
+h2{font-size:17px;margin:26px 0 10px;padding-left:10px;border-left:4px solid #8a6d3b;}
+h3{font-size:15px;margin:18px 0 8px;color:#444;}
+p{margin-bottom:11px;text-indent:2em;}
+p.noindent,li{text-indent:0;}
+ul,ol{padding-left:2em;margin-bottom:10px;}
+li{margin-bottom:6px;}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13px;}
+th,td{border:1px solid #bbb;padding:8px 9px;vertical-align:top;word-break:break-all;}
+th{background:#f5f2ec;font-weight:600;}
+.update-info{color:#555;margin:14px 0 22px;text-indent:0;text-align:center;font-size:13px;}
+.note{background:#fff8e6;border-left:3px solid #c9a24a;padding:10px 12px;margin:12px 0;font-size:13px;color:#5a4a2f;}
+a{color:#1a5fb4;}
+@media (max-width:600px){body{padding:20px 14px 40px;}h1{font-size:19px;}h2{font-size:16px;}table{font-size:12px;}th,td{padding:6px;}}
+</style>
+</head>
+<body>
+
+<h1>《江湖·启行录》第三方 SDK 清单</h1>
+<p class="update-info">版本：V1.0　更新日期：2026年11月05日　生效日期：2026年11月05日</p>
+
+<p>为保障本游戏功能正常运行，我们接入了下列第三方 SDK 或服务。本清单说明各 SDK 的名称、提供方、使用目的及可能处理的信息。各 SDK 的具体处理行为以其自身隐私政策为准，建议您一并阅读。</p>
+
+<h2>一、接入清单</h2>
+<table>
+<tr>
+<th>SDK / 服务</th>
+<th>提供方</th>
+<th>使用目的</th>
+<th>可能处理的信息</th>
+<th>隐私政策 / 说明</th>
+</tr>
+<tr>
+<td>TapSDK Core（TapTap SDK 基础库）</td>
+<td>易玩（上海）网络科技有限公司</td>
+<td>SDK 初始化、基础运行环境、设备信息读取</td>
+<td>设备型号、操作系统版本、网络类型、IP 地址</td>
+<td><a href="https://developer.taptap.cn/docs/sdk/start/agreement/" target="_blank" rel="noopener">TapTap SDK 隐私政策</a></td>
+</tr>
+<tr>
+<td>TapSDK Login（TapTap 登录）</td>
+<td>易玩（上海）网络科技有限公司</td>
+<td>TapTap 账号授权登录、账号识别、存档绑定、切换账号</td>
+<td>TapTap 账号标识（OpenID）、昵称、头像（以授权范围为准）</td>
+<td><a href="https://developer.taptap.cn/docs/sdk/start/agreement/" target="_blank" rel="noopener">TapTap SDK 隐私政策</a></td>
+</tr>
+<tr>
+<td>TapSDK Compliance（实名认证与防沉迷）</td>
+<td>易玩（上海）网络科技有限公司</td>
+<td>实名认证、年龄区间校验、未成年人游玩时段与时长限制</td>
+<td>姓名、身份证件信息、年龄区间、游戏时长、设备与网络信息</td>
+<td><a href="https://developer.taptap.cn/docs/sdk/start/agreement/" target="_blank" rel="noopener">TapTap SDK 隐私政策</a></td>
+</tr>
+<tr>
+<td>TapTap 开发者服务 TDS（兑换码）</td>
+<td>易玩（上海）网络科技有限公司</td>
+<td>兑换码有效性校验、防重复校验、奖励发放</td>
+<td>兑换码、角色 ID、账号标识、请求签名、网络信息</td>
+<td><a href="https://developer.taptap.cn/docs/sdk/start/agreement/" target="_blank" rel="noopener">TapTap 开发者服务说明</a></td>
+</tr>
+<tr>
+<td>Unity Engine</td>
+<td>Unity Technologies</td>
+<td>游戏运行引擎、渲染、音频、物理与基础系统能力</td>
+<td>本游戏未启用 Unity 数据分析、广告或云服务模块；引擎本身不主动上传个人信息</td>
+<td><a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Unity 隐私政策</a></td>
+</tr>
+<tr>
+<td>TextMeshPro</td>
+<td>Unity Technologies</td>
+<td>游戏内文字渲染</td>
+<td>仅本地渲染，不收集个人信息</td>
+<td><a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Unity 隐私政策</a></td>
+</tr>
+<tr>
+<td>Unity Input System</td>
+<td>Unity Technologies</td>
+<td>输入与触控处理</td>
+<td>仅本地处理输入事件，不收集个人信息</td>
+<td><a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Unity 隐私政策</a></td>
+</tr>
+<tr>
+<td>Newtonsoft Json</td>
+<td>James Newton-King（开源组件，经 Unity 包分发）</td>
+<td>本地配置与存档数据的序列化/反序列化</td>
+<td>仅本地处理数据，不收集个人信息</td>
+<td><a href="https://www.newtonsoft.com/json" target="_blank" rel="noopener">Newtonsoft Json 项目页</a></td>
+</tr>
+<tr>
+<td>External Dependency Manager for Unity</td>
+<td>Google（构建期工具）</td>
+<td>构建期依赖管理与原生库集成，不随游戏运行</td>
+<td>不参与游戏运行，不收集个人信息</td>
+<td><a href="https://github.com/googlesamples/unity-jar-resolver" target="_blank" rel="noopener">EDM4U 项目页</a></td>
+</tr>
+</table>
+
+<div class="note">
+<p class="noindent">说明：本游戏当前未接入广告、统计分析、崩溃上报、推送、社交分享或支付类第三方 SDK。如未来新增，我们将在本页面更新清单，并在依法需要时重新征得您的同意。</p>
+</div>
+
+<h2>二、权限说明</h2>
+<p>1. 网络权限：用于 TapTap 登录、兑换码校验、实名认证与防沉迷校验。</p>
+<p>2. 本游戏不会主动申请相机、麦克风、定位、通讯录、短信等权限。</p>
+<p>3. 您可以拒绝或关闭上述权限，但对应功能可能无法正常使用。</p>
+
+<h2>三、联系我们</h2>
+<p>如您对本清单有疑问，或希望了解某第三方 SDK 的信息处理情况，可通过以下方式联系我们：</p>
+<p class="noindent">联系邮箱：<a href="mailto:jianghuqixinglu@163.com">jianghuqixinglu@163.com</a></p>
+
+</body>
+</html>
